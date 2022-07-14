@@ -1,0 +1,65 @@
+.view {
+  flex: 5;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow: auto;
+
+  .top {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+
+    .export {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 5px;
+      text-decoration: none;
+      color: black;
+      background-color: rgb(173, 219, 230);
+      width: 8rem;
+      height: 2rem;
+    }
+  }
+
+  .dataitem {
+    width: 40%;
+    height: max-content;
+    display: block;
+    background-color: rgba(220, 220, 228, 0.815);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 4px 10px 1px rgb(201, 201, 201, 0.5);
+
+    .item {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin-bottom: 10px;
+
+      label {
+        width: 4rem;
+        font-weight: bold;
+      }
+
+      button {
+        cursor: pointer;
+        background-color: lightcoral;
+        color: white;
+        border: none;
+        width: 4rem;
+        height: 1.5rem;
+        border-radius: 2px;
+
+        &:hover {
+          background-color: lightsalmon;
+        }
+      }
+    }
+  }
+}
